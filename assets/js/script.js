@@ -1,16 +1,25 @@
 var firstPage =  document.querySelector(".first-page");
 var startButton =  document.querySelector(".start-button");
 var timerCount = document.querySelector(".timer-count");
-var timer = 5;
+var timer = 25;
+
+var firstQuestion = document.querySelector(".first-question");
+var secondQuestion = document.querySelector(".second-question");
+var thirdQuestion = document.querySelector(".third-question");
+var fourthQuestion = document.querySelector(".fourth-question");
+var fifthQuestion = document.querySelector(".fifth-question");
+
+
 
 function startQuiz(event){
   //start timer
  var timerFunction = setInterval(function() {
     console.log(timer)
     timer--;
+    timerCount.textContent = timer;
 
     if(timer === 0) {
-      console.log('GAME OVER!')
+      //console.log('GAME OVER!')
       clearInterval(timerFunction)
     }
 
@@ -25,13 +34,8 @@ startButton.addEventListener('click', startQuiz)
 
 
 
-
-
-
-
-
-
 //var questions = ['first', 'quest', 'second' ]
+//var arrayOfQuests = []
 
 var questOne = {
 question:"Commonly used data types DO NOT include:",
@@ -63,9 +67,9 @@ choices:['1.JavaScript','2. terminal/bash', '3. for loops', '4. console.log'],
 correctAns:['4.console.log'],
 } 
 
-var myArrayOfQ = []
 
-// for (let i =0; i < choices.length; i++) {
+
+// for (let i =0; i < .length; i++) {
 
 //   element  = choices[i];
 
@@ -89,8 +93,6 @@ var myArrayOfQ = []
 // {questions:"3. text"
 // choices:[1 ex,2 ex,3 ex,4 ex]
 // anwer: "correct answer"}
-
-
 
 
 
