@@ -1,22 +1,22 @@
 var firstPage =  document.querySelector(".first-page");
 var startButton =  document.querySelector(".start-button");
 var timerCount = document.querySelector(".timer-count");
-var timer = 5
+var timer = 5;
 
 function startQuiz(event){
   //start timer
- var timerFunction = setInterval(function(){
+ var timerFunction = setInterval(function() {
     console.log(timer)
-    timer--
+    timer--;
 
     if(timer === 0) {
-      console.log('GAME OVER MAN!')
+      console.log('GAME OVER!')
       clearInterval(timerFunction)
     }
+
   }, 1000)
 
- 
- 
+
   
 }
 
@@ -31,38 +31,7 @@ startButton.addEventListener('click', startQuiz)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var questions = ['first', 'quest', 'second' ]
+//var questions = ['first', 'quest', 'second' ]
 
 var questOne = {
 question:"Commonly used data types DO NOT include:",
