@@ -1,32 +1,111 @@
 var firstPage =  document.querySelector(".first-page");
-var btnStartQuiz =  document.querySelector(".start-button");
+var startButton =  document.querySelector(".start-button");
 var timerCount = document.querySelector(".timer-count");
+var timer = 5
 
+function startQuiz(event){
+  //start timer
+ var timerFunction = setInterval(function(){
+    console.log(timer)
+    timer--
 
- //Make an array of objects?! Put all questions and answers in objects
- //Not sure which way
-var questionsAnswers = {
-questOne:"Commonly used data types DO NOT include:",
-choicesOne:['1. strings', '2. booleans', '3. alerts ','4. numbers'],
-correctAnsOne:['3.alerts'],
+    if(timer === 0) {
+      console.log('GAME OVER MAN!')
+      clearInterval(timerFunction)
+    }
+  }, 1000)
 
-questTwo:"The condition in an if / else statement is enclosed within ______",
-choicesTwo:['1. quotes','2. curly brackets', '3. parentheses','4. square brackets'],
-correctAnsTwo:['3. parentheses'],
-
-questThree:"Arrays in JavaScript can be used to store ______ when being assigned to variables",
-choicesThree:['1. numbers and strings','2. other arrays','3. booleans','4. all of the above' ],
-correctAnsThree:['4. all of the above'],
-
-questFour:"String values must be enclosed within_____ when being assigned to variables.",
-choicesFour:['1. commas','2. curly brackets', '3. quotes', '4. paretheses'],
-correctAnsFour:['3. quotes'],
-
-questFive:"A very useful tool used during development and debugging for printing content to the debugger is",
-choicesFive:['1.JavaScript','2. terminal/bash', '3. for loops', '4. console.log'],
-correctAnsFive:['4.console.log'],
  
+ 
+  
 }
+
+startButton.addEventListener('click', startQuiz)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var questions = ['first', 'quest', 'second' ]
+
+var questOne = {
+question:"Commonly used data types DO NOT include:",
+choices:['1. strings', '2. booleans', '3. alerts ','4. numbers'],
+correctAns:['3.alerts'],
+}
+
+var questTwo = {
+question:"The condition in an if / else statement is enclosed within ______",
+choices:['1. quotes','2. curly brackets', '3. parentheses','4. square brackets'],
+correctAns:['3. parentheses'],
+}
+
+var questThree = {
+question:"Arrays in JavaScript can be used to store ______ when being assigned to variables",
+choices:['1. numbers and strings','2. other arrays','3. booleans','4. all of the above' ],
+correctAns:['4. all of the above'],
+}
+
+var questFour = {
+question:"String values must be enclosed within_____ when being assigned to variables.",
+choices:['1. commas','2. curly brackets', '3. quotes', '4. paretheses'],
+correctAns:['3. quotes'],
+}
+
+var questFive = {
+question:"A very useful tool used during development and debugging for printing content to the debugger is",
+choices:['1.JavaScript','2. terminal/bash', '3. for loops', '4. console.log'],
+correctAns:['4.console.log'],
+} 
+
+var myArrayOfQ = []
+
+// for (let i =0; i < choices.length; i++) {
+
+//   element  = choices[i];
+
+
+// }
+
+//  var indexOfCurrentQuestion = 4;
+//we've reached the end go to scoreboard
+
 
 // more something like this ?????? In an array??
 

@@ -5,33 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CODE QUIZ!!</title>
-    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
 
   </head>
 
   <body>
-    <div class= "first-page">  
-        <H1>Coding Quiz Challenge</H1>
+    <div class="first-page">  
+        <h1>Coding Quiz Challenge</h1>
 
         <p>Try to answer the following code-related questions within the time <br>
         limit. Keep in mind that incorrect answers will penalize your score/time <br>
         by ten seconds!
         </p>
 
-        <button type="start-button">Start Quiz</button>
-    
+        <button type="button" class='start-button'>Start Quiz</button>
     </div>
 
     <div class = "count-down">
          <div class = "timer-text">
         <div class="timer-count">75</div>
+   </div>
+
+   <section class= questions-answers>
+
+        <div class = "first-question"></div>
+            <div id ="question-one"></div>
+            <div id ="choices-one"></div>
+            <div id ="correct-answer-one"></div>
+        </div>
+        
+        <div class = "second-question"></div>
+            <div id ="question-two"></div>
+            <div id ="choices-two"></div>
+            <div id ="correct-answer-two"></div>
+        </div>
+        <div class = "third-question"></div>
+            <div id ="question-three"></div>
+            <div id ="choices-three"></div>
+            <div id ="correct-answer-three"></div>
+        </div> 
+            <div class = "fourth-question"></div>
+            <div id ="question-four"></div>
+            <div id ="choices-four"></div>
+            <div id ="correct-answer-four"></div>
+        </div>
+        
+        <div class = "fifth-question"></div>
+            <div id ="question-one"></div>
+            <div id ="choices-one"></div>
+            <div id ="correct-answer-one"></div>
+        </div>
+
+    </section>  
+     
+    <div id='player-initials'>
+        <form>
+
+        </form>
+
     </div>
 
+    <div id='high-scores'>
+
+    </div>
     
 
-    
+
+
+
+
+
    
-  <script src= 'assets/js/script.js'></script>
+  <script src='./assets/js/script.js'></script>
   </body>
     
 </html>
