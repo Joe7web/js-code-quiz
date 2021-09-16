@@ -38,7 +38,7 @@ questionSwitcher()
 
 startButton.addEventListener('click', startQuiz)
 
-//startButton.addEventListener('click', questionSwitcher)
+
 
 function questionSwitcher() {
   firstQuestion.textContent = questionsArray[0].question
@@ -47,11 +47,31 @@ function questionSwitcher() {
   thirdChoices.textContent = questionsArray[0].choices[2]
   fourthChoices.textContent = questionsArray[0].choices[3]
 
-  console.log(questionsArray);
+  firstQuestion.textContent = questionsArray[1].question
+  firstChoices.textContent = questionsArray[1].choices[0]
+  secondChoices.textContent = questionsArray[1].choices[1]
+  thirdChoices.textContent = questionsArray[1].choices[2]
+  fourthChoices.textContent = questionsArray[1].choices[3]
+
+  firstQuestion.textContent = questionsArray[2].question
+  firstChoices.textContent = questionsArray[2].choices[0]
+  secondChoices.textContent = questionsArray[2].choices[1]
+  thirdChoices.textContent = questionsArray[2].choices[2]
+  fourthChoices.textContent = questionsArray[2].choices[3]
+
+  firstQuestion.textContent = questionsArray[3].question
+  firstChoices.textContent = questionsArray[3].choices[0]
+  secondChoices.textContent = questionsArray[3].choices[1]
+  thirdChoices.textContent = questionsArray[3].choices[2]
+  fourthChoices.textContent = questionsArray[3].choices[3]
+
+  firstQuestion.textContent = questionsArray[4].question
+  firstChoices.textContent = questionsArray[4].choices[0]
+  secondChoices.textContent = questionsArray[4].choices[1]
+  thirdChoices.textContent = questionsArray[4].choices[2]
+  fourthChoices.textContent = questionsArray[4].choices[3]
+
 }
-
-
-
 
 
 var questionsArray = [ 
@@ -79,7 +99,7 @@ var questionsArray = [
   question:"A very useful tool used during development and debugging for printing content to the debugger is",
   choices:['1.JavaScript','2. terminal/bash', '3. for loops', '4. console.log'],
   correctAns:['4.console.log'],
-}
+},
 
 ]
 
@@ -94,65 +114,3 @@ var questionsArray = [
 
 
 
-// for (let i =0; i < .length; i++) {
-
-//   element  = choices[i];
-
-
-// }
-
-//  var indexOfCurrentQuestion = 4;
-//we've reached the end go to scoreboard
-
-
-// more something like this ?????? In an array??
-
-// {questions:"1. text"
-// choices:[1 ex,2 ex,3 ex,4 ex]
-// anwer: "correct answer"}
-
-// {questions:"2. text"
-// choices:[ ex, ex, ex, ex]
-// anwer: "correct answer"}
-
-// {questions:"3. text"
-// choices:[1 ex,2 ex,3 ex,4 ex]
-// anwer: "correct answer"}
-
-
-
-
-
-
-
-// GIVEN I am taking a code quiz
-
-// WHEN I click the start button
-// THEN a timer starts and I am presented with a question
-    // The landing page will have a start button, when clicked 
-    //will initiate the first page with questions and start the timer.
-
-// WHEN I answer a question
-// THEN I am presented with another question
-   //These are multiple choice questions with clickable choices.
-   // If answered correctly - will state "Correct!" and
-   //add '10' to the score and move to next question. There are
-   // 5 questions total.
-   // The score will continue to add each correct score to score total.
-   
-
-// WHEN I answer a question incorrectly
-// THEN time is subtracted from the clock
-  // If answer incorrectly - will state "Wrong!" and
-  //will  reduce 12 seconds from the clock.  
-
-// WHEN all questions are answered or the timer reaches 0
-// THEN the game is over
-    // Will switch to different page "All done!"
-
-// WHEN the game is over
-// THEN I can save my initials and my score
-   // Will have space to enter intials and see final score.
-   //These score will be stored in local storage.
-   //"View High Scores" in top left corner will be clickable to see the scores 
-   //from highest to lowest 
