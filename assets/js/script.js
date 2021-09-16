@@ -53,8 +53,7 @@ function questionSwitcher() {
 
 
 
-//var questions = ['first', 'quest', 'second' ]
-//var arrayOfQuests = []
+
 var questionsArray = [ 
   {
   question:"Commonly used data types DO NOT include:",
@@ -62,43 +61,36 @@ var questionsArray = [
   correctAns:['3. alerts']
 },
 {
-  question:"Commonly used data types DO NOT include:",
-  choices:['1. strings', '2. booleans', '3. alerts','4. numbers'],
-  correctAns:['3. alerts']
+  question:"The condition in an if / else statement is enclosed within ______",
+  choices:['1. quotes','2. curly brackets', '3. parentheses','4. square brackets'],
+  correctAns:['3. parentheses'],
 },
 {
-  question:"Commonly used data types DO NOT include:",
-  choices:['1. strings', '2. booleans', '3. alerts','4. numbers'],
-  correctAns:['3. alerts'],
-  }
+ question:"Arrays in JavaScript can be used to store ______ when being assigned to variables",
+ choices:['1. numbers and strings','2. other arrays','3. booleans','4. all of the above' ],
+ correctAns:['4. all of the above'],
+},
+{
+  question:"String values must be enclosed within_____ when being assigned to variables.",
+  choices:['1. commas','2. curly brackets', '3. quotes', '4. paretheses'],
+  correctAns:['3. quotes'],
+},
+{
+  question:"A very useful tool used during development and debugging for printing content to the debugger is",
+  choices:['1.JavaScript','2. terminal/bash', '3. for loops', '4. console.log'],
+  correctAns:['4.console.log'],
+}
+
 ]
 
 
 
-//}
 
-//  = {
-// question:"The condition in an if / else statement is enclosed within ______",
-// choices:['1. quotes','2. curly brackets', '3. parentheses','4. square brackets'],
-// correctAns:['3. parentheses'],
-// }
 
-//  = {
-// question:"Arrays in JavaScript can be used to store ______ when being assigned to variables",
-// choices:['1. numbers and strings','2. other arrays','3. booleans','4. all of the above' ],
-// correctAns:['4. all of the above'],
-// }
 
-//  = {
-// question:"String values must be enclosed within_____ when being assigned to variables.",
-// choices:['1. commas','2. curly brackets', '3. quotes', '4. paretheses'],
-// correctAns:['3. quotes'],
-// }
-//  = {
-// question:"A very useful tool used during development and debugging for printing content to the debugger is",
-// choices:['1.JavaScript','2. terminal/bash', '3. for loops', '4. console.log'],
-// correctAns:['4.console.log'],
-// } 
+
+
+
 
 
 
