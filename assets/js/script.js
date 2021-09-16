@@ -6,16 +6,19 @@ var timer = 25;
 var firstPage =  document.querySelector(".first-page");
 
 var firstQuestion = document.querySelector(".first-question");
-var secondQuestion = document.querySelector(".second-question");
-var thirdQuestion = document.querySelector(".third-question");
-var fourthQuestion = document.querySelector(".fourth-question");
-var fifthQuestion = document.querySelector(".fifth-question");
+// var secondQuestion = document.querySelector(".second-question");
+// var thirdQuestion = document.querySelector(".third-question");
+// var fourthQuestion = document.querySelector(".fourth-question");
+// var fifthQuestion = document.querySelector(".fifth-question");
 
 var firstChoices = document.querySelector("#choices-one");
 var secondChoices = document.querySelector("#choices-two");
 var thirdChoices = document.querySelector("#choices-three");
 var fourthChoices = document.querySelector("#choices-four");
 var fifthChoices = document.querySelector("#choices-five");
+
+firstPage.setAttribute("style", "text-align: center;")
+
 
 
 function startQuiz(event) {
