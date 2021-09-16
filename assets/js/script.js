@@ -3,6 +3,8 @@ var startButton =  document.querySelector(".start-button");
 var timerCount = document.querySelector(".timer-count");
 var timer = 25;
 
+var firstPage =  document.querySelector(".first-page");
+
 var firstQuestion = document.querySelector(".first-question");
 var secondQuestion = document.querySelector(".second-question");
 var thirdQuestion = document.querySelector(".third-question");
@@ -11,7 +13,7 @@ var fifthQuestion = document.querySelector(".fifth-question");
 
 
 
-function startQuiz(event){
+function startQuiz(event) {
   //start timer
  var timerFunction = setInterval(function() {
     console.log(timer)
@@ -25,11 +27,17 @@ function startQuiz(event){
 
   }, 1000)
 
-
-  
+ 
 }
 
 startButton.addEventListener('click', startQuiz)
+
+startButton.addEventListener('click', questionSwitcher)
+
+function questionSwitcher(event) {
+  questOne.question 
+    console.log(questOne.question);
+}
 
 
 
