@@ -4,12 +4,10 @@ var timerCount = document.querySelector(".timer-count");
 var timer = 25;
 
 var firstPage =  document.querySelector(".first-page");
-
+var pTag = document.querySelector(".pTag")
+var countDownText = document.querySelector(".count-down")
 var firstQuestion = document.querySelector(".first-question");
-// var secondQuestion = document.querySelector(".second-question");
-// var thirdQuestion = document.querySelector(".third-question");
-// var fourthQuestion = document.querySelector(".fourth-question");
-// var fifthQuestion = document.querySelector(".fifth-question");
+var qandA = document.querySelector(".questions-answers");
 
 var firstChoices = document.querySelector("#choices-one");
 var secondChoices = document.querySelector("#choices-two");
@@ -17,8 +15,10 @@ var thirdChoices = document.querySelector("#choices-three");
 var fourthChoices = document.querySelector("#choices-four");
 var fifthChoices = document.querySelector("#choices-five");
 
-firstPage.setAttribute("style", "text-align: center;")
-
+firstPage.setAttribute("style", "text-align: center; margin-top:40px;")
+pTag.setAttribute("style", "font-size: 20px;")
+countDownText.setAttribute("style", "font-size: 30px; font-weight: bold; margin-leftgit s: 40px;")
+qandA.setAttribute("style", "font-size: 20px; text-align:center;")
 
 
 function startQuiz(event) {
