@@ -15,6 +15,7 @@ var thirdChoices = document.querySelector("#choices-three");
 var fourthChoices = document.querySelector("#choices-four");
 var fifthChoices = document.querySelector("#choices-five");
 
+//setting styles for elements
 firstPage.setAttribute("style", "text-align: center; margin-top:40px;")
 pTag.setAttribute("style", "font-size: 20px;")
 countDownText.setAttribute("style", "font-size: 30px; font-weight: bold; margin-leftgit s: 40px;")
@@ -22,14 +23,14 @@ qandA.setAttribute("style", "font-size: 20px; text-align:center;")
 
 
 function startQuiz(event) {
-  //start timer
+  //start timer and first question
  var timerFunction = setInterval(function() {
     console.log(timer)
     timer--;
     timerCount.textContent = timer;
 
     if(timer === 0) {
-      //console.log('GAME OVER!')
+      
       clearInterval(timerFunction)
     }
 
@@ -75,7 +76,7 @@ function questionSwitcher() {
   fourthChoices.textContent = questionsArray[4].choices[3]
 
 }
-
+//array of questions and multiple choice questions for quiz
 
 var questionsArray = [ 
   {
